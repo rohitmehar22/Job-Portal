@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">JobPortal</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured-jobs">Browse Jobs</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job</h1>
+            <p>Explore thousands of job opportunities and land your next big role!</p>
+            <div class="search-bar">
+                <input id="searchMenu" type="text" placeholder="Search for jobs...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section id="featured-jobs" class="job-listings">
+        <h2>Featured Jobs</h2>
+        <div class="filters">
+            <label for="location">Location</label>
+            <select id="location">
+                <option value="all">All</option>
+                <option value="remote">Remote</option>
+                <option value="new York">New York</option>
+                <option value="san Francisco">San Francisco</option>
+            </select>
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="software">Software</option>
+                <option value="design">Design</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </div>
+
+        <div class="jobs">
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p>Company: XYZ Ltd.</p>
+                <p>Location: Remote</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSetW-tBDIIl0bpPXAtyMx93u8yTv406bOdhI1tJbrOjRMtQ-A/viewform?usp=header">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p>Company: ABC Corp.</p>
+                <p>Location: New York</p>
+                <a href="#">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Marketing Manager</h3>
+                <p>Company: XYZ Ltd.</p>
+                <p>Location: San Francisco</p>
+                <a href="#">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Product Manager</h3>
+                <p>Company: ABC Corp.</p>
+                <p>Location: Remote</p>
+                <a href="#">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Browse by Categories</h2>
+        <div class="category-cards">
+            <div class="category-card">
+                <h3>Software Development</h3>
+                <p>Explore job openings in software engineering, coding, and application development.</p>
+                <a href="#">Explore</a>
+            </div>
+            <div class="category-card">
+                <h3>Design</h3>
+                <p>Browse opportunities for UI/UX designers, graphic designers, and more.</p>
+                <a href="#">Explore</a>
+            </div>
+            <div class="category-card">
+                <h3>Marketing</h3>
+                <p>Find marketing, SEO, and social media jobs to grow brands online.</p>
+                <a href="#">Explore</a>
+            </div>
+            <div class="category-card">
+                <h3>Product Management</h3>
+                <p>Discover roles for product managers in innovative companies.</p>
+                <a href="#">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"JobPortal helped me find my dream job as a front-end developer. The process was smooth, and the job matches were on point!"</p>
+                <h4>- Sarah L., Developer</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"As a marketing manager, I was able to find top job opportunities that fit my skills perfectly. Highly recommended!"</p>
+                <h4>- John D., Marketing Manager</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"A great platform to connect with top employers. I found multiple job listings that matched my expertise!"</p>
+                <h4>- Emily R., Designer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section id="subscribe" class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest job opportunities and career tips delivered to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us!</p>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 JobPortal | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
